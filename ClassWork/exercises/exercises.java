@@ -4,13 +4,13 @@ public class exercises{
 	{
 		System.out.println(hasDigit("Abc"));
 		System.out.println("--------------");
-		System.out.println(isPalindrome0("mom"));
+		System.out.println(isPalindrome0("mother"));
 		System.out.println("--------------");
 		System.out.println(isPalindrome1("dad"));
 		System.out.println("--------------");
 		System.out.println(isPalindrome2("tacocat"));
 		System.out.println("--------------");
-		System.out.println(isPalindrome3("wow"));
+		System.out.println(isPalindrome3("wonder"));
 		
 	}
 	/**
@@ -65,9 +65,10 @@ public class exercises{
 	
 	public static boolean isPalindrome1(String s)
 	{
+		int l = s.length();
 		for(int i = 0; i < s.length(); i++)
 		{
-			if(s.substring(i,i+1) != s.substring(s.length() - (i + 1))) //PROBLEMS
+			if(!s.substring(i,i+1).equals(s.substring(l - (i + 1), l - i)))
 			{
 				return false;
 			}
@@ -116,7 +117,7 @@ public class exercises{
 			return true;
 		}
 		
-		if (s.substring(0,1) == s.substring(s.length() - 1))
+		if (s.substring(0,1).equals(s.substring(s.length() - 1)))
 		{
 			return isPalindrome2(s.substring(1, s.length() - 1));
 		}
