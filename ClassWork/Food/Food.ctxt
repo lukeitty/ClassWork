@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Food()
+comment1.params=s\ c
+comment1.target=Food(int,\ int)
+comment2.params=
+comment2.target=int\ getShelfLife()
+comment3.params=
+comment3.target=int\ getCarbs()
+comment4.params=s
+comment4.target=void\ setShelfLife(int)
+comment5.params=c
+comment5.target=void\ setCarbs(int)
+comment6.params=
+comment6.target=java.lang.String\ isVegan()
+comment7.params=pounds
+comment7.target=double\ averagePrice(double)
+comment8.params=f
+comment8.target=boolean\ equals(Food)
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10
